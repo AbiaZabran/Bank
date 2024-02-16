@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="./output/tailwind.css" />
+    <link rel="shortcut icon" href="assect/user.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl font-bold text-center mt-7">User Dashbord</h1>
+    </header>
+    <main>
+      <section>
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-10 text-center font-bold">
+          <div class="bg-cyan-400 rounded-xl p-5">
+            <p class="text-2xl">Deposit</p>
+            <p class="text-2xl">$<span class="Deposit-sum">00</span></p>
+          </div>
+          <div class="bg-purple-400 rounded-xl p-5">
+            <p class="text-2xl">Withdraw</p>
+            <p class="text-2xl">$<span class="Withdraw-anount">00</span></p>
+          </div>  b 
+          <div class="bg-green-400 rounded-xl p-5">
+            <p class="text-2xl">Blance</p>
+            <p class="text-2xl">$<span class="Blance-sum">00</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-10 font-bold">
+        <div class="bg-cyan-400 rounded-xl p-5">
+          <p class="text-2xl mb-5">Please Deposit</p>
+          <input class="w-9/12 block mb-4 p-2 rounded-md" id="Deposit-fild" type="email" placeholder="enter your email" />
+          <button
+            id="Deposit-btn"
+            class="py-2 px-4 bg-orange-500 rounded-md text-white text-md font-semibold hover:bg-orange-600 duration-200"
+          >
+            Deposit
+          </button>
+        </div>
+        <div class="bg-purple-400 rounded-xl p-5">
+          <p class="text-2xl mb-5">Please Withdraw</p>
+          <input class="w-9/12 block mb-4 p-2 rounded-md" id="Withdraw-field" type="email" placeholder="enter your email" />
+          <button
+            id="Withdraw-btn"
+            class="py-2 px-4 bg-orange-500 rounded-md text-white text-md font-semibold hover:bg-orange-600 duration-200"
+          >
+            Withdraw
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="js/dashbord.js"></script>
+    <script src="js/semiDashbord.js"></script>
+  </body>
+</html>
